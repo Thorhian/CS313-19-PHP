@@ -8,5 +8,7 @@ function changeTextColor() {
     colorID = document.getElementById("changeColorButton").value;
     div = document.getElementById("section1");
     div.innerHTML = "LOLOLOLOLOLOLOLOLOLOLOL";
-    div.style.backgroundColor = 'green';
+    console.debug(colorID);
+    console.debug('green');
+    div.style.backgroundColor = colorID;
 }
