@@ -1,0 +1,5 @@
+
+
+function clickAlert() {
+    alert("Clicked!");
+}
