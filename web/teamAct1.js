@@ -6,5 +6,5 @@ function clickAlert() {
 
 function changeTextColor() {
     colorID = document.getElementById("changeColorButton").value;
-    document.getElementById("section1").color = colorID;
+    document.getElementById("section1").backgroundColor = colorID;
 }
