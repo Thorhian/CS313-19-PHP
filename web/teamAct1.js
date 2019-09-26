@@ -5,6 +5,6 @@ function clickAlert() {
 }
 
 function changeTextColor() {
-    colorID = Document.getElementByID("changeColorButton").value;
-    Document.getElementByID("section1").color = colorID;
+    colorID = document.getElementByID("changeColorButton").value;
+    document.getElementByID("section1").color = colorID;
 }
