@@ -9,4 +9,5 @@ function changeTextColor() {
     div = document.getElementById("section1");
     console.debug(colorID);
     div.style.color = colorID;
+
 }

@@ -1,5 +1,5 @@
+
 <?php
-
-  phpinfo();
-
+header('Location: homepage.html');
+die();
 ?>
