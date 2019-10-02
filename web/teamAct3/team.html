@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="post" action="display.php">
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input id="name" class="form-control" type="text" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input id="email" class="form-control" type="text" name="email">
+        </div>
+        <div class="form-group">
+            <label for="major">Major: </label>
+            <select id="major" class="custom-select" name="major">
+                <option>Computer Science</option>
+                <option>Web Design and Development</option>
+                <option>Computer information Technology</option>
+                <option>Computer Engineering</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">Comments: </label>
+            <textarea id="comments" class="form-control" name="comments" rows="5"></textarea>
+        </div>
+        <div class="form-check form-check-inline">
+            <input id="map1" class="form-check-input" type="checkbox" name="continents[]" value="North America">
+            <label for="map1" class="form-check-label">North America</label>
+            <input id="map2" class="form-check-input" type="checkbox" name="continents[]" value="South America">
+            <label for="map2" class="form-check-label">South America</label>
+            <input id="map3" class="form-check-input" type="checkbox" name="continents[]" value="Europe">
+            <label for="map3" class="form-check-label">Europe</label>
+            <input id="map4" class="form-check-input" type="checkbox" name="continents[]" value="Asia">
+            <label for="map4" class="form-check-label">Asia</label>
+            <input id="map5" class="form-check-input" type="checkbox" name="continents[]" value="Australia">
+            <label for="map5" class="form-check-label">Australia</label>
+            <input id="map6" class="form-check-input" type="checkbox" name="continents[]" value="Africa">
+            <label for="map6" class="form-check-label">Africa</label>
+            <input id="map7" class="form-check-input" type="checkbox" name="continents[]" value="Antartica">
+            <label for="map7" class="form-check-label">Antarctica</label>
+        </div>
+    </form>
+  
+
+</body>
+</html>
