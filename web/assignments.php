@@ -1,7 +1,7 @@
+
 <?php
 include './usefulFunctions.php';
 ?>
-
 
 <!doctype html>
 <html class="" lang="">
@@ -33,7 +33,7 @@ include './usefulFunctions.php';
             </h1>
             <div class="row">
                 <div class="col-4">
-                    <a href="assignments.php">To Assignments</a>
+                    <a href="homepage.php">Back to Homepage</a>
                 </div>
                 <div class="col-6">
                     <a href="https://github.com/Thorhian">To My Github Account </a>
@@ -42,11 +42,8 @@ include './usefulFunctions.php';
         </div>
 
         <div class="container">
-            <p>
-
-            </p>
+            <p> More to be added </p>
         </div>
-
         <?php
         insert_bootSJS();
         ?>
