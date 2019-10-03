@@ -4,7 +4,7 @@ include './usefulFunctions.php';
 
 
 <!doctype html>
-<html class="no-js" lang="">
+<html class="" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -32,6 +32,12 @@ include './usefulFunctions.php';
         <h1 class="header jumbotron">
             The Lab
         </h1>
+        <div class="row">
+            <div class="col-4">
+                <a href="assignments.php">To Assignments</a>
+            </div>
+            <div class="col-6">
+                <a href="https://github.com/Thorhian">To My Github Account </a>
     </div>
 
     <div class="container">
