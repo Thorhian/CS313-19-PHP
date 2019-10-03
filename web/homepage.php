@@ -1,4 +1,6 @@
-
+<?php
+include './usefulFunctions.php';
+?>
 
 
 <!doctype html>
@@ -11,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <?php insert_bootSCSS();?>
         <link rel="stylesheet" href="homepage.css">
 
     </head>
@@ -26,17 +28,20 @@
 
 
     </body>
-
-    <header class="jumbotron">
-        <h1 class="header">
+    <div class="container">
+        <h1 class="header jumbotron">
             The Lab
         </h1>
-    </header>
+    </div>
 
-    <div>
+    <div class="container">
         <p>
 
         </p>
     </div>
+
+    <?php
+    function insert_bootSJS();
+    ?>
 
 </html>
