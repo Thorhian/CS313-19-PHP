@@ -41,7 +41,7 @@ include './usefulFunctions.php';
     </div>
 
     <?php
-    function insert_bootSJS();
+    insert_bootSJS();
     ?>
 
 </html>
