@@ -1,5 +1,5 @@
 
 <?php
-header('Location: homepage.html');
+header('Location: homepage.php');
 die();
 ?>

@@ -1,8 +1,10 @@
 
-
+<?php
+include './usefulFunctions.php';
+?>
 
 <!doctype html>
-<html class="no-js" lang="">
+<html class="" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <?php insert_bootSCSS();?>
         <link rel="stylesheet" href="homepage.css">
 
     </head>
@@ -25,19 +27,25 @@
         <![endif]-->
 
 
+        <div class="container">
+            <h1 class="header jumbotron">
+                The Lab
+            </h1>
+            <div class="row">
+                <div class="col-4">
+                    <a href="homepage.php">Back to Homepage</a>
+                </div>
+                <div class="col-6">
+                    <a href="https://github.com/Thorhian">To My Github Account </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p> More to be added </p>
+        </div>
+        <?php
+        insert_bootSJS();
+        ?>
     </body>
-
-    <header class="jumbotron">
-        <h1 class="header">
-            The Lab
-        </h1>
-        <h3> Joshua Berensen's Homepage </h3>
-    </header>
-
-    <div>
-        <p>
-
-        </p>
-    </div>
-
 </html>
