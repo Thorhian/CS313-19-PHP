@@ -4,7 +4,7 @@ CREATE TABLE users
 	username VARCHAR(16) NOT NULL,
 	email VARCHAR(16) NOT NULL,
 	prof_pic VARCHAR(128) NOT NULL,
-	password VARCHAR(256) NOT NULL,
+	password VARCHAR(256) NOT NULL
 );
 
 CREATE TABLE projects
