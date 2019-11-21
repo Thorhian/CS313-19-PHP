@@ -1,6 +1,6 @@
 <?php
 
-include(generalFunctions.php)
+include("generalFunctions.php")
 
 ?>
 <!doctype html>
