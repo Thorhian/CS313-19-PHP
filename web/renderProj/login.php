@@ -1,5 +1,6 @@
 <?php
 
+include(generalFunctions.php)
 
 ?>
 <!doctype html>
@@ -10,10 +11,7 @@
         <title>Login</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
+        <?php insertCSS() ?>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -28,6 +26,7 @@
             <form action="loginAuthentication.php">
                 Username <br>
                 <input type="text" name="username"><br>
+                Password <br>
                 <input type="password" name="password"><br>
             </form>
         </div>
