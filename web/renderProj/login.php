@@ -7,10 +7,10 @@ include("generalFunctions.php")
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Login</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <?php insertCSS() ?>
     </head>
     <body>
@@ -22,7 +22,18 @@ include("generalFunctions.php")
             </p>
         <![endif]-->
 
-        <div>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Render Labs</a>
+                </div>
+                <ul class="nav navbar">
+                    <li>Hello There!</li>
+                    <li>Good Morning!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
             <form action="loginAuthentication.php">
                 Username <br>
                 <input type="text" name="username"><br>
