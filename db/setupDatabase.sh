@@ -1,1 +1,1 @@
-heroku pg:psql -f ./myDB.sql
+heroku pg:psql -f myDb.sql
