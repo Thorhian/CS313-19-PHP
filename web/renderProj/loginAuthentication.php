@@ -1,21 +1,23 @@
 <?php
-require('db.php')
+session_start();
+require('db.php');
 
+if(!isset($_GET['username']) || !isset($_GET['password'])) {
+     header("login.php");
+     die();
+}
+
+if (isset($_SESSION[userID])) {
+     header("userHome.php");
+     die();
+} else {
+     $username = $_GET['username'];
+     $password = $_GET['password'];
+     $db = getDb();
+     $logQ = $db->prepare('SELECT user_id, username, password FROM users WHERE username=:username AND password=:password');
+     $logQ->execute(array(':username' => $username, ':password' => $password));
+     $rows = $logQ->fetchAll(PDO::FETCH_ASSOC);
+     echo $rows;
+}
 
 ?>
-<!--
-     <!DOCTYPE html>
-     <html lang="en">
-     <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Search Results for <?php echo $book; ?></title>
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-     <link rel="stylesheet" href="style.css">
-     </head>
-     <body>
-
-
-     </body>
-     </html>
-     //-->
