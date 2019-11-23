@@ -7,7 +7,7 @@ if(!isset($_GET['username']) || !isset($_GET['password'])) {
      die();
 }
 
-if (isset($_SESSION[userID])) {
+if (isset($_SESSION['userID'])) {
      header("userHome.php");
      die();
 } else {
@@ -17,7 +17,9 @@ if (isset($_SESSION[userID])) {
      $logQ = $db->prepare('SELECT user_id, username, password FROM users WHERE username=:username AND password=:password');
      $logQ->execute(array(':username' => $username, ':password' => $password));
      $rows = $logQ->fetchAll(PDO::FETCH_ASSOC);
-     echo $rows;
+     foreach($rows as $row) {
+          echo $row;
+     }
 }
 
 ?>
