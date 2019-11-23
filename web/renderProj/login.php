@@ -42,9 +42,9 @@ include("generalFunctions.php")
             <div class="jumbotron">
                 <form action="loginAuthentication.php" class="form-signin">
                     Username <br>
-                    <input type="text" name="username"><br>
+                    <input type="text" name="username" class="form-control"><br>
                     Password <br>
-                    <input type="password" name="password"><br>
+                    <input type="password" name="password" class="form-control"><br>
                     <input type="submit" value="Login" class="btn btn-lg brn-primary btn-block">
                 </form>
             </div>
