@@ -27,9 +27,8 @@ include("generalFunctions.php")
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Render Labs</a>
                 </div>
-                <ul class="nav navbar">
+                <ul class="nav navbar navbar-right">
                     <li>Hello There!</li>
-                    <li>Good Morning!</li>
                 </ul>
             </div>
         </nav>
