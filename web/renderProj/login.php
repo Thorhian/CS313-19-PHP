@@ -22,7 +22,7 @@ include("generalFunctions.php")
             </p>
         <![endif]-->
 
-        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <nav class="navbar navbar-fixed-top navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Render Labs</a>
