@@ -39,13 +39,15 @@ include("generalFunctions.php")
             </div>
         </nav>
         <div class="container">
-            <form action="loginAuthentication.php" class="form-signin">
-                Username <br>
-                <input type="text" name="username"><br>
-                Password <br>
-                <input type="password" name="password"><br>
-                <input type="submit" value="Login">
-            </form>
+            <div class="jumbotron">
+                <form action="loginAuthentication.php" class="form-signin">
+                    Username <br>
+                    <input type="text" name="username"><br>
+                    Password <br>
+                    <input type="password" name="password"><br>
+                    <input type="submit" value="Login" class="btn btn-lg brn-primary btn-block">
+                </form>
+            </div>
         </div>
 
     </body>
