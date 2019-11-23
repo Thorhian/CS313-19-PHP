@@ -17,8 +17,13 @@ if (isset($_SESSION['userID'])) {
      $logQ = $db->prepare('SELECT user_id, username, password FROM users WHERE username=:username AND password=:password');
      $logQ->execute(array(':username' => $username, ':password' => $password));
      $rows = $logQ->fetchAll(PDO::FETCH_ASSOC);
-     foreach($rows as $row) {
-          echo $row;
+     if(!isset($rows)) {
+          header("login.php");
+          die();
+     }
+
+     foreach($rows as $key => $value) {
+          echo $key . $value;
      }
 }
 
