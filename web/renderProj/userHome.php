@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['userID'])) {
-    header("login.php");
+    header('Location: login.php');
     die();
 }
 
@@ -19,6 +19,6 @@ if(!isset($_SESSION['userID'])) {
     </head>
     <body>
         <h1> Welcome <?php echo $_SESSION['username']?>! </h1>
-
+    
     </body>
 </html>
