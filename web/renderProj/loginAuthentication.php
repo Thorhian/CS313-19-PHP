@@ -26,7 +26,7 @@ if (isset($_SESSION['userID'])) {
      }
 
      if($username == $rows[0]['username'] && $password == $rows[0]['password']) {
-          $_SESSION['userID'] = $rows[0]['user-id'];
+          $_SESSION['userID'] = $rows[0]['user_id'];
           $_SESSION['username'] = $rows[0]['username'];
           header("userHome.php");
           die();
