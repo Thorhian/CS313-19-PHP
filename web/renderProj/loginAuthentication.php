@@ -24,7 +24,10 @@ if (isset($_SESSION['userID'])) {
 
      echo $rows . "\n";
      foreach($rows as $key => $value) {
-          echo $key . $value;
+          echo $key;
+          foreach($key as $row) {
+               printf("%s\n", $row);
+          }
      }
 }
 
