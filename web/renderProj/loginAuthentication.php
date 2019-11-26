@@ -22,7 +22,7 @@ if (isset($_SESSION['userID'])) {
           die();
      }
 
-     echo $rows . "\n";
+     echo $rows['username'];
      foreach($rows as $key => $value) {
           echo $key;
           foreach($key as $row) {
