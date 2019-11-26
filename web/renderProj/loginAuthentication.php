@@ -23,11 +23,9 @@ if (isset($_SESSION['userID'])) {
      }
 
      echo $rows['username'];
-     foreach($rows as $key => $value) {
-          echo $key;
-          foreach($key as $row) {
-               printf("%s\n", $row);
-          }
+     foreach($rows as $row) {
+          printf("user-id: %d\n", $row['user_id']);
+          printf("username: %s\n", $row['username']);
      }
 }
 
